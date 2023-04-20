@@ -3,10 +3,10 @@ data:
   FILE_PATH: /tmpdir/
   FILE_VOLUME_HOST_PATH: /tmp/
   K8S_VESSEL_STORAGE_ACCOUNT_ENV: dev
-  LOG_JSON: "true"
+  LOG_JSON: 'true'
   LOG_LEVEL: DEBUG
-  MONITORING_PORT: "9102"
-  SERVER_PORT: "8000"
+  MONITORING_PORT: '9102'
+  SERVER_PORT: '8000'
 kind: ConfigMap
 metadata:
   creationTimestamp: null
