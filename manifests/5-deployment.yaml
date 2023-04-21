@@ -27,7 +27,7 @@ spec:
       hostname: example-service
       containers:
         - name: example-service
-          image: example-service:ec8c847-V1
+          image: docker.io/library/example-service:ec8c847-V1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
@@ -42,11 +42,11 @@ spec:
               name: testdir
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "250m"
+              memory: '64Mi'
+              cpu: '250m'
             limits:
-              memory: "64Mi"
-              cpu: "250m"
+              memory: '64Mi'
+              cpu: '250m'
           readinessProbe:
             httpGet:
               path: /readiness
@@ -67,4 +67,3 @@ spec:
           hostPath:
             path: /tmp/
             type: Directory
-            
