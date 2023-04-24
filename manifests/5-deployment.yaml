@@ -21,11 +21,13 @@ spec:
       labels:
         app: example-service
         instance: app
+        version: ec8c847-dirty-1677509667
+        flavour: vessels
     spec:
       hostname: example-service
       containers:
         - name: example-service
-          image: zetmw/example-service:v1
+          image: example-service:ec8c847-V1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
