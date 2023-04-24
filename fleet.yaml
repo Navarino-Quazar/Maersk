@@ -1,7 +1,0 @@
-namespace: example-service
-- name: dev
-  clusterSelector:
-    matchLabels:
-      env: dev
-  yaml:
-   - noreplication
