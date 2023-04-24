@@ -27,7 +27,7 @@ spec:
       hostname: example-service
       containers:
         - name: example-service
-          image: zetmw/example-service:v1
+          image: zetmw/example-service
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
