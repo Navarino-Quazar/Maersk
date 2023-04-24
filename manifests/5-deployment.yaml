@@ -20,9 +20,6 @@ spec:
       name: app
       labels:
         app: example-service
-        instance: app
-        version: ec8c847-dirty-1677509667
-        flavour: vessels
     spec:
       hostname: example-service
       containers:
