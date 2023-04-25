@@ -1,6 +1,0 @@
-namespace: monitoring
-targetCustomizations:
-  - name: dev
-    clusterSelector:
-      matchLabels:
-        env: dev
