@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: prometheus-deployment
-  namespace: monitoring
+  defaultNamespace: monitoring
   labels:
     app: prometheus-server
 spec:
@@ -19,9 +19,9 @@ spec:
         - name: prometheus
           image: prom/prometheus
           args:
-            - "--config.file=/etc/prometheus/prometheus.yml"
-            - "--web.enable-lifecycle"
-            - "--storage.tsdb.path=/prometheus/"
+            - '--config.file=/etc/prometheus/prometheus.yml'
+            - '--web.enable-lifecycle'
+            - '--storage.tsdb.path=/prometheus/'
           ports:
             - containerPort: 9090
           volumeMounts:
@@ -34,6 +34,6 @@ spec:
           configMap:
             defaultMode: 420
             name: prometheus-server-conf
-  
+
         - name: prometheus-storage-volume
           emptyDir: {}
