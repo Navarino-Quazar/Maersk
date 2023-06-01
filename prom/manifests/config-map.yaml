@@ -21,6 +21,10 @@ data:
     global:
       scrape_interval: 5s
       evaluation_interval: 5s
+      remote_write:
+        - url: http://192.168.199.36:9009/api/v1/push
+          headers:
+            X-Scope-OrgID: maersk
     rule_files:
       - /etc/prometheus/prometheus.rules
     alerting:
