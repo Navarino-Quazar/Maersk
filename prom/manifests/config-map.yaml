@@ -22,7 +22,7 @@ data:
       scrape_interval: 5s
       evaluation_interval: 5s
       external_labels:
-        cluster: maersk
+        cluster: vader
         namespace: maersk
     rule_files:
       - /etc/prometheus/prometheus.rules
